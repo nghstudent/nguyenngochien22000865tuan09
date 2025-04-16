@@ -11,6 +11,8 @@ import store2 from './components/Todo/store';
 import TodoList from './components/Todo/TodoList';
 import store3 from './components/Theme/store';
 import ThemeToggler from './components/Theme/ThemeToggler';
+import store4 from './components/Cart/store';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -63,6 +65,14 @@ function App() {
           <ThemeToggler />
         </div>
       </Provider>
+      <hr />
+      <h1 className="demo-title">CÂU 4:  Giỏ hàng (Shopping Cart)</h1>
+      <Provider store={store4}>
+      <div className="App">
+        <h1>Shopping Cart</h1>
+        <Cart />
+      </div>
+    </Provider>
 
     </div>
   );
