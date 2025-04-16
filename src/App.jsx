@@ -9,6 +9,8 @@ import store1 from './components/Counter/store';
 import Counter from './components/Counter/Counter';
 import store2 from './components/Todo/store';
 import TodoList from './components/Todo/TodoList';
+import store3 from './components/Theme/store';
+import ThemeToggler from './components/Theme/ThemeToggler';
 
 function App() {
   return (
@@ -51,6 +53,14 @@ function App() {
         <div className="App">
           <h1>To-Do List App</h1>
           <TodoList />
+        </div>
+      </Provider>
+      <hr />
+      <h1 className="demo-title">CÂU 3:  Toggle Theme (Dark/Light mode)</h1>
+      <Provider store={store3}>
+        <div className="App">
+          <h1>Toggle Theme App</h1>
+          <ThemeToggler />
         </div>
       </Provider>
 
