@@ -18,7 +18,7 @@ function UseReducer() {
 
   return (
     <div>
-      <h1>Counter Reducer: {state.count}</h1>
+      <h4>Counter Reducer: {state.count}</h4>
       <button onClick={() => dispatch({ type: 'increment' })}>+</button>
       <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
     </div>
