@@ -7,6 +7,8 @@ import store from './components/UseReduxToolkit/store';
 import CounterReduxToolkit from './components/UseReduxToolkit/Counter';
 import store1 from './components/Counter/store';
 import Counter from './components/Counter/Counter';
+import store2 from './components/Todo/store';
+import TodoList from './components/Todo/TodoList';
 
 function App() {
   return (
@@ -42,6 +44,14 @@ function App() {
       <h1 className="demo-title">CÂU 1: Counter App (Đếm số đơn giản)</h1>
       <Provider store={store1}>
         <Counter />
+      </Provider>
+      <hr />
+      <h1 className="demo-title">CÂU 2:  To-do List</h1>
+      <Provider store={store2}>
+        <div className="App">
+          <h1>To-Do List App</h1>
+          <TodoList />
+        </div>
       </Provider>
 
     </div>
